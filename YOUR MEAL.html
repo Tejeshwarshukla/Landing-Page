@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Your Meal</title>
+  <style type="text/css">
+  
+  *{padding :0;margin: 0; box-sizing: border-box;}
+      
+  header{
+    width: 100%;
+    height: 100vh;
+    background:  linear-gradient(rgba(0,0,0,.1),rgba(0,0,0.2)),
+     url('https://res.cloudinary.com/simplotel/image/upload/x_0,y_0,w_500,h_281,r_0,c_crop,q_80,fl_progressive/w_500,f_auto,c_fit/genx-mirzapur/mirzapur_food_c8qs9y');
+    background-size: cover;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  nav{
+    width:100%;
+    height: 100px;
+    color:   white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .logo{
+     font-size: 2em;
+     letter-spacing: 3px;
+
+  }
+  .menu a{
+     text-decoration: none;
+     color:  darkorange;
+     padding: 10px 20px;
+      font-size: 23px;
+      position: relative;
+  }
+  .menu a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-bottom: 2px solid red;
+    transition: 0.4s linear;
+  }
+  .menu a:hover::before{
+    width: 80%;
+  }
+
+  .Login a{ text-decoration: none;
+     color: white;
+     padding: 10px 20px;
+      font-size: 23px;
+      background: red;
+      border-radius: 9px;
+      transition: 0.4s;
+  }
+  .Login a:hover{
+    background: transparent;
+border: 1px solid red; }
+.h-txt{
+  max-width: 650px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  color: white;
+
+}
+.h-txt span{
+   letter-spacing: 5px;
+}
+.h-txt h1{
+   font-size: 3.5em;
+}
+.h-txt a{
+  text-decoration: none;
+  background:darkblue ;
+  color: white;
+  padding: 10px 20 px;
+  letter-spacing: 8px;
+  transition: 0.4s;
+}
+.h-txt a:hover{
+    background: transparent;
+border: 1px solid red;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <nav> 
+      <div class="logo">
+        YOUR MEAL
+      </div>
+      <div class="menu">
+        <a href="#">Meals</a>
+        <a href="#">Fast Food</a>
+        <a href="#">Drinks&Juices</a>
+        <a href="#">GET 30% Off on First Order</a>
+        <a href="#">Get Help</a>
+      </div>
+      <div class="Login">
+        <a href="#">Login</a>
+      </div>
+    </nav>
+    <section class="h-txt">
+      <span> To Enjoy</span>
+      <h1>Meals
+      </h1>
+      <br>
+      <a href="#"> order now</a>
+    </section>
+  </header>
+</body>
+</html>
